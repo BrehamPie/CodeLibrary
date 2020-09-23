@@ -2,8 +2,7 @@
 Things Added:
 ## Data Structure:
   1. [DSU](https://github.com/BrehamPie/CodeLibrary/blob/master/Data%20Structure/DSU.cpp)
-  2. [MergeSort Tree](https://github.com/BrehamPie/CodeLibrary/blob/master/Data%20Structure/MergeSort.cpp)
-  3. [Segment Tree](https://github.com/BrehamPie/CodeLibrary/blob/master/Data%20Structure/SegmentTree.cpp)
+  2. [Segment Tree](https://github.com/BrehamPie/CodeLibrary/blob/master/Data%20Structure/SegmentTree.cpp)
   4. [Trie(string)](https://github.com/BrehamPie/CodeLibrary/blob/master/Data%20Structure/Trie(array).cpp)
   
 ## Graph:
