@@ -7,7 +7,7 @@
   
 ## Graph:
   1. [2-SAT](https://github.com/BrehamPie/CodeLibrary/blob/master/Graph/2-SAT.cpp)
-  2. [Bridge] (https://github.com/BrehamPie/CodeLibrary/blob/master/Graph/Bridge.cpp)
+  2. [Bridge](https://github.com/BrehamPie/CodeLibrary/blob/master/Graph/Bridge.cpp)
 ## Tree:
   1. [Lowest Common Ancestor(Sparse Table)](https://github.com/BrehamPie/CodeLibrary/blob/master/Tree/LCA(Sparse%20Table).cpp)
 ## String:
