@@ -11,4 +11,6 @@
 ## Tree:
   1. [Lowest Common Ancestor(Sparse Table)](https://github.com/BrehamPie/CodeLibrary/blob/master/Tree/LCA(Sparse%20Table).cpp)
 ## String:
-  1. [Manacher's Algorithm](https://github.com/BrehamPie/CodeLibrary/blob/master/String/Manacher's)
+  1. [KMP](https://github.com/BrehamPie/CodeLibrary/blob/master/String/KMP.cpp)
+  2. [Manacher's Algorithm](https://github.com/BrehamPie/CodeLibrary/blob/master/String/Manacher's.cpp)
+  
