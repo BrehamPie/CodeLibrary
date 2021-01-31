@@ -10,7 +10,7 @@ struct Kruskal
         ll w;
         data(){}
         data(int idx,int u,int v,int w):idx(idx),u(u),v(v),w(w){}
-        bool operator<(data o)
+        bool operator<(data &o)
         {
             return w<o.w;
         }
@@ -75,7 +75,7 @@ int main()
         Call init(n) where n=node number.
         Call addEdge(idx,u,v,w) to add edge.
         Call mst() to get the minimum cost.
-        No adjacent matrix created.
+        No adjaceny matrix created.
         components return total components.
         addEdge includes edge index too.
         sz returns size of that components.
