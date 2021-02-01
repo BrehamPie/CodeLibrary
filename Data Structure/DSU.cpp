@@ -7,7 +7,7 @@ struct DSU
     int c;///Total components.
     DSU(int n): par(n+1),rnk(n+1,0),sz(n+1,0),c(n)
     {
-        for(int i=1;i<=n;i++) par[i]=i;
+        for(int i=1;i<=n;i++) par[i]=i,sz[i]=1;
     }
     int root(int i){return par[i]==i?i:(par[i]=root(par[i]));}
     bool same(int a,int b) {return root(a)==root(b);}
@@ -28,7 +28,13 @@ struct DSU
 
 int main()
 {
-    int n;
-    cin>>n;
-    DSU dsu(n);
+    /*
+        Take instance with node size.
+        Index starts from 1.
+        Path Compression Used.
+    */
+    /*
+        Problem: https://cses.fi/problemset/task/1676
+    */
+    
 }
