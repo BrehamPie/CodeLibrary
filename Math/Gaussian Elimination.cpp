@@ -38,10 +38,10 @@ int gauss(vector<vector<ld>>&a,vector<ld>&ans)
             ans[i]=a[where[i]][m]/a[where[i]][i];
     for(int i=0;i<n;i++)
     {
-        double sum = 0;
+        ld sum = 0;
         for(int j =0;j<m;j++)
             sum+=ans[j]*a[i][j];
-        if(fabs(sum-a[i][m])>EPS) ///L.H.S!=R.H.S
+        if(abs(sum-a[i][m])>EPS) ///L.H.S!=R.H.S
             ans.clear();//No solution
     }
     return row;
