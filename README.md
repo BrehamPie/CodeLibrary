@@ -10,9 +10,10 @@
   2. [Bridge](https://github.com/BrehamPie/CodeLibrary/blob/master/Graph/Bridge.cpp)
   3. [Dijkstra](https://github.com/BrehamPie/CodeLibrary/blob/master/Graph/Dijkstra.cpp)
   4. [MST(Kruskal)](https://github.com/BrehamPie/CodeLibrary/blob/master/Graph/MST(Kruskal).cpp)
-## Graph:
+## Math:
   1. [Gauss Elimination](https://github.com/BrehamPie/CodeLibrary/blob/master/Math/Gaussian%20Elimination.cpp)
   2. [Gauss Elimination(Modulo 2)](https://github.com/BrehamPie/CodeLibrary/blob/master/Math/Gauss(modulo2).cpp)
+  3. 2. [Matrix](https://github.com/BrehamPie/CodeLibrary/blob/master/Math/Matrix.cpp)
 ## Tree:
   1. [Lowest Common Ancestor(Sparse Table)](https://github.com/BrehamPie/CodeLibrary/blob/master/Tree/LCA(Sparse%20Table).cpp)
 ## String:
