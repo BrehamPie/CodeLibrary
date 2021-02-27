@@ -4,7 +4,7 @@
   2. [Segment Tree](https://github.com/BrehamPie/CodeLibrary/blob/master/Data%20Structure/SegmentTree.cpp)
   4. [Trie(string)](https://github.com/BrehamPie/CodeLibrary/blob/master/Data%20Structure/Trie(array).cpp)
   5. [Trie(number)](https://github.com/BrehamPie/CodeLibrary/blob/master/Data%20Structure/Trie(Number).cpp)
-##Flow:
+## Flow & Matching:
   1. [Dinic's Algorithm](https://github.com/BrehamPie/CodeLibrary/blob/master/Flow%20%26%20Matching/Dinic.cpp)
   2. [Hopcroft-Karp MPM](https://github.com/BrehamPie/CodeLibrary/blob/master/Flow%20%26%20Matching/Hopcroft-Karp.cpp)
   3. [Kuhn's MBM](https://github.com/BrehamPie/CodeLibrary/blob/master/Flow%20%26%20Matching/Kuhn's%20MBM.cpp)
