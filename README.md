@@ -17,6 +17,8 @@
   1. [Gauss Elimination](https://github.com/BrehamPie/CodeLibrary/blob/master/Math/Gaussian%20Elimination.cpp)
   2. [Gauss Elimination(Modulo 2)](https://github.com/BrehamPie/CodeLibrary/blob/master/Math/Gauss(modulo2).cpp)
   3. [Matrix](https://github.com/BrehamPie/CodeLibrary/blob/master/Math/Matrix.cpp)
+  4. [Linear(Sieve,Phi,Mobius)](https://github.com/BrehamPie/CodeLibrary/blob/master/Math/Linear(Sieve%2CPhi%2CMobius).cpp)
+  5. [Miller Rabin-Pollard Rho](https://github.com/BrehamPie/CodeLibrary/blob/master/Math/Miller%20Rabin-%20Pollard%20Rho.cpp)
 ## Tree:
   1. [Lowest Common Ancestor(Sparse Table)](https://github.com/BrehamPie/CodeLibrary/blob/master/Tree/LCA(Sparse%20Table).cpp)
 ## String:
