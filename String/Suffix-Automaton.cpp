@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-const int MXCHR = 256;
+const int MXCHR = 26;
 struct suffixAutomata
 {
     /**
@@ -8,7 +8,6 @@ struct suffixAutomata
  * link -> longest suffix that is another endpos-equivalent class
  * firstpos -> end position of the first occurrence of the largest string of that node
  **/
-
     struct state
     {
         int link, len;
@@ -25,6 +24,7 @@ struct suffixAutomata
     vector<state> node;
     int sz, last;
     vector<int> cnt, distinct, firstPos, occur, SA;
+    vector<vector<int>> adj; // suffix links tree
     // cnt and SA for counting sort the nodes.
     int L;
 
@@ -39,7 +39,7 @@ struct suffixAutomata
     }
     int getID(char c)
     {
-        return c; // change according to problem
+        return c - 'a'; // change according to problem
     }
     void extend(char c)
     {
@@ -84,17 +84,18 @@ struct suffixAutomata
         cnt.resize(sz + 1);
         distinct.resize(sz + 1);
         SA.resize(sz + 1);
+        adj.resize(sz + 1);
         for (int i = 0; i <= sz; i++)
             cnt[node[i].len]++;
         for (int i = 1; i <= L; i++)
             cnt[i] += cnt[i - 1];
         for (int i = 0; i <= sz; i++)
             SA[--cnt[node[i].len]] = i;
-        for (int i = sz; i >= 0; i--)
+        for (int i = sz; i > 0; i--)
         {
             int idx = SA[i];
-            if (idx)
-                occur[node[idx].link] += occur[idx];
+            occur[node[idx].link] += occur[idx];
+            adj[node[idx].link].push_back(idx);
             distinct[idx] = 1;
             for (int j = 0; j < MXCHR; j++)
             {
@@ -102,10 +103,13 @@ struct suffixAutomata
                     distinct[idx] += distinct[node[idx].next[j]];
             }
         }
+        for (int i = 0; i < MXCHR; i++)
+            if (node[0].next[i] != -1)
+                distinct[0] += distinct[node[0].next[i]];
     }
     pair<int, int> lcs(string &str) //Longest Common Subsequence of two string. returns start position and length
     {
-        int mxlen = 0,bestpos = -1,pos = 0, len = 0; 
+        int mxlen = 0, bestpos = -1, pos = 0, len = 0;
         int u = 0;
         for (char c : str)
         {
@@ -141,4 +145,16 @@ int main()
     call extend(c) for each character c in string
     call Process() to initiate the important values
     */
+    int t;
+    cin >> t;
+    while (t--)
+    {
+        string str;
+        cin >> str;
+        suffixAutomata as;
+        for (char c : str)
+            as.extend(c);
+        as.Process();
+        cout << as.distinct[0] - 1 << endl;
+    }
 }
